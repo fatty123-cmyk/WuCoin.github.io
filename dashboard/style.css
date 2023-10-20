@@ -2,64 +2,51 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
+    background-color: #f0f0f0;
 }
 
-#sidebar {
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #333;
     color: #fff;
-    width: 200px;
-    padding: 20px;
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(0); /* Sidebar initially open */
-}
-
-#dashboard {
-    flex-grow: 1;
-    padding: 20px;
-    transition: margin-left 0.3s ease-in-out;
-    margin-left: 200px; /* Account for the sidebar width */
-}
-
-/* Style the sidebar header */
-#sidebar h2 {
-    font-size: 18px;
-}
-
-#sidebar ul {
-    list-style: none;
-}
-
-#sidebar li {
-    margin-bottom: 10px;
-}
-
-#sidebar a {
-    color: #fff;
-    text-decoration: none;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
     padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Ensure the header stays on top of other content */
 }
 
-header h1 {
+#header h1 {
     font-size: 24px;
+    margin: 0;
 }
 
-/* Style the main content */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#content {
+    margin-top: 100px; /* Ensure content appears below the sticky header */
+    padding: 20px;
+}
+
 section {
+    background-color: #fff;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
-section h2 {
-    font-size: 18px;
-}
-
-ul {
-    list-style: disc;
-    padding-left: 20px;
-}
+/* Add styling to your sections and content as needed */

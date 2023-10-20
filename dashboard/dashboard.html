@@ -5,36 +5,36 @@
     <link rel="stylesheet" type="text/css" href="dashboard.css">
 </head>
 <body>
-    <header>
-        <h1>Dashboard</h1>
-        <button id="sidebarToggle">Toggle Sidebar</button>
-    </header>
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <h2>Sidebar Menu</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </aside>
 
-    <div class="container">
-        <aside id="sidebar">
-            <h2>Sidebar Menu</h2>
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Analytics</a></li>
-                <li><a href="#">Users</a></li>
-                <li><a href="#">Settings</a></li>
+    <!-- Main Dashboard Content -->
+    <main id="dashboard">
+        <header>
+            <h1>Dashboard</h1>
+            <button id="sidebarToggle">Toggle Sidebar</button>
+        </header>
+
+        <section>
+            <h2>Welcome to your Dashboard</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section>
+            <h2>Recent Activity</h2>
+            <ul id="activityList">
+                <!-- Dynamic content will be added here -->
             </ul>
-        </aside>
-
-        <main>
-            <section>
-                <h2>Welcome to your Dashboard</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </section>
-
-            <section>
-                <h2>Recent Activity</h2>
-                <ul id="activityList">
-                    <!-- Dynamic content will be added here -->
-                </ul>
-            </section>
-        </main>
-    </div>
+        </section>
+    </main>
 
     <script src="dashboard.js"></script>
 </body>

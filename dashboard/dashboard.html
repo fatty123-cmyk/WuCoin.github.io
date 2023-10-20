@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <title>Sticky Header Example</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <!-- Sidebar -->
-    <aside id="sidebar">
-        <h2>Sidebar Menu</h2>
-        <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </aside>
-
-    <!-- Main Dashboard Content -->
-    <main id="dashboard">
-        <header>
-            <h1>Dashboard</h1>
-            <button id="sidebarToggle">Toggle Sidebar</button>
-        </header>
-
-        <section>
-            <h2>Welcome to your Dashboard</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
-
-        <section>
-            <h2>Recent Activity</h2>
-            <ul id="activityList">
-                <!-- Dynamic content will be added here -->
+    <header id="header">
+        <h1>Your Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
             </ul>
-        </section>
-    </main>
+        </nav>
+    </header>
 
-    <script src="dashboard.js"></script>
+    <div id="content">
+        <section id="section1">
+            <h2>Section 1</h2>
+            <!-- Your content here -->
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <!-- Your content here -->
+        </section>
+        <section id="section3">
+            <h2>Section 3</h2>
+            <!-- Your content here -->
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

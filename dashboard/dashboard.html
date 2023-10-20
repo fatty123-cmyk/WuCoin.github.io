@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sticky Header Example</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
 </head>
 <body>
-    <header id="header">
-        <h1>Your Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <h2>Sidebar Menu</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="https://fatty123-cmyk.github.io/WuCoin.github.io/Register/register.html" target="_blank">Register</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Dashboard Content -->
+    <main id="dashboard">
+        <header>
+            <h1>Dashboard</h1>
+            <button id="sidebarToggle">Toggle Sidebar</button>
+        </header>
+
+        <section>
+            <h2>Welcome to your Dashboard</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section>
+            <h2>Recent Activity</h2>
+            <ul id="activityList">
+                <!-- Dynamic content will be added here -->
             </ul>
-        </nav>
-    </header>
+        </section>
+    </main>
 
-    <div id="content">
-        <section id="section1">
-            <h2>Section 1</h2>
-            <!-- Your content here -->
-        </section>
-        <section id="section2">
-            <h2>Section 2</h2>
-            <!-- Your content here -->
-        </section>
-        <section id="section3">
-            <h2>Section 3</h2>
-            <!-- Your content here -->
-        </section>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>

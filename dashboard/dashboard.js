@@ -1,15 +1,19 @@
-// Toggle sidebar functionality
-document.getElementById('sidebarToggle').addEventListener('click', function () {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.style.display = (sidebar.style.display === 'none' || sidebar.style.display === '') ? 'block' : 'none';
-});
+// Get the header element
+const header = document.getElementById('header');
 
-// Example: Populate recent activity list with dynamic data
-const activityList = document.getElementById('activityList');
-const activityData = ['User John Doe registered', 'New report submitted', 'Product XYZ updated'];
+// Get the offset position of the header
+const sticky = header.offsetTop;
 
-activityData.forEach(function (activity) {
-    const listItem = document.createElement('li');
-    listItem.textContent = activity;
-    activityList.appendChild(listItem);
-});
+// Function to make the header sticky
+function makeHeaderSticky() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+}
+
+// Attach the scroll event listener
+window.onscroll = function() {
+    makeHeaderSticky();
+};

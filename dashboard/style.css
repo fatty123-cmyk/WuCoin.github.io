@@ -2,6 +2,41 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+}
+
+#sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0); /* Sidebar initially open */
+}
+
+#dashboard {
+    flex-grow: 1;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 200px; /* Account for the sidebar width */
+}
+
+/* Style the sidebar header */
+#sidebar h2 {
+    font-size: 18px;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+}
+
+#sidebar a {
+    color: #fff;
+    text-decoration: none;
 }
 
 header {
@@ -15,48 +50,7 @@ header h1 {
     font-size: 24px;
 }
 
-#sidebarToggle {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.container {
-    display: flex;
-}
-
-#sidebar {
-    background-color: #333;
-    color: #fff;
-    width: 200px;
-    padding: 20px;
-    display: none;
-}
-
-aside h2 {
-    font-size: 18px;
-}
-
-aside ul {
-    list-style: none;
-}
-
-aside li {
-    margin-bottom: 10px;
-}
-
-aside a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
+/* Style the main content */
 section {
     margin-bottom: 20px;
 }

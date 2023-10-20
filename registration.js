@@ -1,8 +1,8 @@
 document.getElementById('registrationForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    var username = document.getElementById('reg-username').value;
+    var password = document.getElementById('reg-password').value;
 
     // Retrieve existing users from local storage or initialize an empty array
     var users = JSON.parse(localStorage.getItem('users')) || [];
@@ -21,4 +21,7 @@ document.getElementById('registrationForm').addEventListener('submit', function 
 
     alert('Registration successful. You can now login.');
     this.reset();
+
+    // You can set a flag or update the UI to indicate registration success
+    document.getElementById('registrationSuccessMessage').textContent = 'Registration successful. You can now log in.';
 });
